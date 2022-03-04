@@ -10,10 +10,7 @@
 const sections = document.querySelectorAll("section");
 const trans = document.querySelector(".trans");
 const gradients = ["coral", "chartreuse", "chocolate", "cadetblue"];
-
-const options = {
-    threshold: 0.7,
-};
+const options = {threshold: 0.7};
 
 let observer = new IntersectionObserver(navScroll, options);
 
@@ -39,7 +36,6 @@ function navScroll(entries){
         }
     });
 }
-
 sections.forEach(function(sections) {
     observer.observe(sections);
 });
